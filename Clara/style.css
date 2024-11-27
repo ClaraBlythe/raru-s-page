@@ -1,0 +1,267 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General body style */
+body {
+    background-color: #fce4ec; /* Light pink background */
+    color: #6a1b9a; /* Darker pink text color */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ec407a; /* Pink */
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header .navbar {
+    list-style: none;
+    display: flex;
+}
+
+header .navbar li {
+    margin-right: 20px;
+}
+
+header .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header .navbar li a:hover {
+    color: #f48fb1; /* Light pink on hover */
+}
+
+header .top-btn .nav-btn {
+    background-color: #f48fb1; /* Light pink */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+header .top-btn .nav-btn:hover {
+    background-color: #ec407a; /* Darker pink on hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    background-color: #ff80ab; /* Light pink */
+}
+
+.home .home-content h3, .home .home-content h1, .home .home-content p {
+    color: #880e4f; /* Dark pink */
+}
+
+.home .home-img img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 50px 40px;
+    background-color: #f8bbd0; /* Lighter pink */
+}
+
+.about .about-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about .about-content {
+    margin-left: 40px;
+}
+
+.about .about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #880e4f;
+}
+
+.about .about-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ec407a;
+}
+
+.about .about-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #6a1b9a;
+}
+
+.about .about-content .btn {
+    background-color: #ec407a;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.about .about-content .btn:hover {
+    background-color: #f48fb1; /* Light pink on hover */
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #fce4ec;
+    padding: 50px 40px;
+}
+
+.portfolio .heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #880e4f;
+}
+
+.portfolio-content .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.portfolio-content .row img {
+    width:  25%;
+    border-radius: 10px;
+}
+
+.portfolio-content .main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-content .main-row .row-text {
+    font-size: 24px;
+    color: #880e4f;
+}
+
+.portfolio-content .main-row .row-icon {
+    font-size: 24px;
+    color: #880e4f;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8bbd0;
+    padding: 50px 40px;
+}
+
+.contact .heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #880e4f;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form .input-box {
+    margin-bottom: 20px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 2px solid #ec407a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form input[type="submit"] {
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #f48fb1;
+}
+
+/* Footer */
+.footer {
+    background-color: #ec407a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social a:hover {
+    color: #f48fb1;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .home, .about, .portfolio, .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .portfolio-content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-content .row img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
